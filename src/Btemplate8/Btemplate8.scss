@@ -1,0 +1,84 @@
+#BTemp8Swiper {
+	.swiper {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.swiper-pagination {
+		position: absolute;
+		left: 15rem !important;
+		top: 12rem;
+		@media (orientation: portrait) {
+			left: 3rem !important;
+			top: 13rem !important;
+		}
+	}
+
+	.swiper-pagination-bullet {
+		height: 2.3rem;
+		width: 2.3rem;
+		border-radius: 50%;
+		border: 0.4rem solid grey;
+		@media (orientation: portrait) {
+			height: 1.2rem;
+			width: 1.2rem;
+			border: 0.2rem solid grey;
+		}
+	}
+	.swiper-pagination-bullet-active {
+		background-color: yellow;
+	}
+}
+
+#carouselB8 {
+	.alice-carousel__wrapper {
+		height: 70vh;
+		padding-top: 13.2vh;
+
+		.alice-carousel__stage-item {
+			height: 45vh !important;
+			transition: all ease 0.3s;
+
+			#details {
+				display: none;
+			}
+			#profile {
+				display: none;
+			}
+		}
+		.__target {
+			width: 42vw !important;
+			height: 60vh !important;
+			transform: translateY(-20%);
+			#details {
+				display: flex;
+			}
+			#profile {
+				display: flex;
+			}
+		}
+	}
+
+	.alice-carousel__prev-btn {
+		width: max-content;
+		height: max-content;
+		font-size: 5rem;
+		position: absolute;
+		top: 0;
+		right: 9rem;
+	}
+
+	.alice-carousel__next-btn {
+		width: max-content;
+		height: max-content;
+		font-size: 5rem;
+		position: absolute;
+		top: 0;
+		right: 5rem;
+	}
+
+	.alice-carousel__dots {
+		display: none;
+	}
+}
